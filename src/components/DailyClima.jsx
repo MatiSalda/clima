@@ -7,7 +7,7 @@ function DailyClima() {
 
   useEffect(() => {
     async function fetchData(){
-        const response = await fetch('http://dataservice.accuweather.com/forecasts/v1/daily/5day/7249?apikey=zaK6x5EJ4e75t1Tv2ZnYZAOQzs3sOPoK&language=es-ar&details=false&metric=true')
+        const response = await fetch('https://dataservice.accuweather.com/forecasts/v1/daily/5day/7249?apikey=zaK6x5EJ4e75t1Tv2ZnYZAOQzs3sOPoK&language=es-ar&details=false&metric=true')
         const climaxdia = await response.json()
         setClima(climaxdia)
       }

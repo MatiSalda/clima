@@ -7,9 +7,9 @@ function Clima() {
 
   useEffect(() => {
     async function fetchData(){
-        const response = await fetch('http://dataservice.accuweather.com/forecasts/v1/daily/1day/7249?apikey=zaK6x5EJ4e75t1Tv2ZnYZAOQzs3sOPoK&language=es-ar&details=true&metric=true')
+        const response = await fetch('https://dataservice.accuweather.com/forecasts/v1/daily/1day/7249?apikey=zaK6x5EJ4e75t1Tv2ZnYZAOQzs3sOPoK&language=es-ar&details=true&metric=true')
         const clima = await response.json()
-        const response2 = await fetch('http://dataservice.accuweather.com/currentconditions/v1/7249?apikey=zaK6x5EJ4e75t1Tv2ZnYZAOQzs3sOPoK&language=es-ar&details=true')
+        const response2 = await fetch('https://dataservice.accuweather.com/currentconditions/v1/7249?apikey=zaK6x5EJ4e75t1Tv2ZnYZAOQzs3sOPoK&language=es-ar&details=true')
         const climaActual = await response2.json()
         setClima(clima)
         setClimaActual(climaActual)
