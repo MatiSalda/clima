@@ -24,8 +24,8 @@ function DailyClima() {
            {climaxdia.DailyForecasts.map((data,index)=>(
             <div className='climaPorDia'>
                 <img src={data.Day.Icon+'.png'} alt={data.Day.Icon} />
-                < h3 >Max:{data.Temperature.Maximum.Value.toFixed(0)+'°C'}</h3>
-                 <h3 key={index}>Min:{data.Temperature.Minimum.Value.toFixed(0)+'°C'}</h3>
+                < h3 >Max: {data.Temperature.Maximum.Value.toFixed(0)+'°C'}</h3>
+                 <h3 key={index}>Min: {data.Temperature.Minimum.Value.toFixed(0)+'°C'}</h3>
 
             </div>
            ))}

@@ -27,7 +27,7 @@ function Clima() {
             <div className='climaActual'>
                 <div className='climaActualIconTemp'>
                   <img src={climaActual[0].WeatherIcon+'.png'}  alt={climaActual[0].WeatherIcon} />
-                  <h1>{climaActual[0].Temperature.Metric.Value+'C'}</h1>
+                  <h1>{climaActual[0].Temperature.Metric.Value+'°C'}</h1>
                 </div>
                 <p>{climaActual[0].WeatherText}</p> 
             </div>
