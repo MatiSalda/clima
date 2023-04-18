@@ -26,10 +26,11 @@ function DailyClima() {
         <div className='contClimaPorDia'>
           {climaxdia.DailyForecasts.slice(1, 5).map((data, index) => (
             <div className='climaPorDia' key={index}>
+              <h4>{getDayOfWeek(index + 1)}</h4>
               <img src={data.Day.Icon + '.png'} alt={data.Day.Icon} />
               <h3>Max: {data.Temperature.Maximum.Value.toFixed(0) + '°C'}</h3>
               <h3>Min: {data.Temperature.Minimum.Value.toFixed(0) + '°C'}</h3>
-              <h4>{getDayOfWeek(index + 1)}</h4>
+              <p className='iconPhrase'>{data.Day.IconPhrase}</p>
             </div>
           ))}
         </div>
